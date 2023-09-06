@@ -1,0 +1,42 @@
+﻿<Window x:Class="Nghien_cuu_ung_dung.MessageBox.MessageBox_OPT"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nghien_cuu_ung_dung.MessageBox"
+        mc:Ignorable="d"
+        Title="MessageBox_OPT" Height="200" Width="400"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Background="Transparent"
+        AllowsTransparency="True"
+        ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Grid>
+        <Border Background="White">
+            <TextBlock x:Name="LabelError1"
+                Text="LL"
+                FontFamily="Arial"
+                FontSize="9"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                TextWrapping="Wrap"
+                Opacity = "100" 
+                Foreground="#FFFD9797" RenderTransformOrigin="-0.16,0.766" Margin="144,141,0,0"/>
+        </Border>
+        <Button x:Name="Button1"
+                Margin="142,158,143,10"
+                Content="Xác nhận" Click="Button_Click" IsDefault="True">
+        </Button>
+        <TextBox x:Name="Textbox1"
+            FontSize="16"
+            Margin="92,77,93,90" TextAlignment="Center" >
+        </TextBox>
+        <Label Content="Nhập mã xác nhận" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Top"
+                Height="26" 
+                Width="110" Margin="0,46,0,0"/>
+        <Label Name="lblTime" FontSize="12" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="252,115,0,0" Height="25" Width="24" />
+        <TextBlock Height="NaN" Margin="126,120,144,65" Width="NaN" Text="Mã xác nhận bị hủy sau" />
+    </Grid>
+</Window>

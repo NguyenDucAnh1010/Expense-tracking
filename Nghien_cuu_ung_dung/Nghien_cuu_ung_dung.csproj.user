@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="MessageBox\Answer_1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MessageBox\Answer_2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MessageBox\Answer_3.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MessageBox\Answer_4.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MessageBox\Answer_5.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MessageBox\MessageBox_OPT.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MessageBox\MS1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MessageBox\MS4.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MessageBox\MS5.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MessageBox\MS6.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="MessageBox\SignUp_Succesful.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Bao_cao_tai_chinh.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Cap nhat_mat_khau.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Cap_nhat_lai_gmail.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Cap_nhat_lai_so_dien_thoai.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Cong_no_nha_cung_cap.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Cong_No_Nha_Van_Chuyen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Cong_no_san_thuong_mai_dien_tu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Du_bao_doanh_thu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Du_bao_san_pham.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Ho_tro.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Information_Account.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Kiem_Tra_Giao_Dich.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\MainMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\Sign_up.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\So_quy.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MessageBox\Answer_1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MessageBox\Answer_2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MessageBox\Answer_3.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MessageBox\Answer_4.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MessageBox\Answer_5.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MessageBox\MessageBox_OPT.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MessageBox\MS1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MessageBox\MS4.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MessageBox\MS5.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MessageBox\MS6.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MessageBox\SignUp_Succesful.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\Basic_Button.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\Color.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\GridView_Header.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\MainMenu_Button.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\Menu_Logout.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\TextBox_Test.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\Update_Button.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Style\UserControl_Button.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Bao_cao_tai_chinh.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Cap nhat_mat_khau.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Cap_nhat_lai_gmail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Cap_nhat_lai_so_dien_thoai.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Cong_no_nha_cung_cap.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Cong_No_Nha_Van_Chuyen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Cong_no_san_thuong_mai_dien_tu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Du_bao_doanh_thu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Du_bao_san_pham.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Ho_tro.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Information_Account.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Kiem_Tra_Giao_Dich.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MainMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\Sign_up.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\So_quy.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

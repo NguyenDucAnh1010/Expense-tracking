@@ -1,0 +1,143 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Nghien_cuu_ung_dung.View"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+             x:Class="Nghien_cuu_ung_dung.View.Cong_No_Nha_Van_Chuyen"
+             mc:Ignorable="d" 
+             d:DesignHeight="690" d:DesignWidth="1050">
+    <Grid Margin="0,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="60*"/>
+            <RowDefinition Height="90*"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0"
+                Background="#FF453A7B"
+                Margin="15,15,15,15"
+                CornerRadius="10"/>
+        <TextBlock Text="Thời gian bắt đầu:"
+                FontSize="20"
+                FontWeight="Bold"
+                Foreground="{StaticResource titlleColor1}"
+                Margin="50,38,823,26"/>
+        <DatePicker x:Name="DatePicker1"
+                    materialDesign:HintAssist.Hint="Pick Date"
+                    materialDesign:TextFieldAssist.HasClearButton="True"
+                    BorderBrush="{StaticResource titlleColor1}"
+                    Foreground="#9E9E9E"
+                    Style="{StaticResource MaterialDesignFloatingHintDatePicker}" 
+                    Margin="236,25,591,0" Height="38" VerticalAlignment="Top"/>
+        <Button x:Name="Button1"
+            Height="25"
+                    FontSize="12"
+                    Content="Cập nhật"
+                    FontWeight="Bold"
+                    FontFamily="Arial"
+                    Background="Transparent"
+                    BorderBrush="Transparent"
+                    Tag="{StaticResource Color1}"
+                    VerticalContentAlignment="Center"
+                    Style="{StaticResource UserControlButton}" 
+                    Margin="924,37,34,37" Click="Button1_Click" IsDefault="True"/>
+        <Border Grid.Row="1" Margin="15,0,15,0">
+            <Grid>
+                <Border x:Name="BDRounded" CornerRadius="20" Background="#FF453A7B"/>
+                <ListView x:Name="ListView1" Loaded="ListView1_Loaded"  >
+                    <ListView.Resources>
+                        <Style TargetType="{x:Type GridViewColumnHeader}">
+                            <Setter Property="Background" Value="#FF453A7B"/>
+                            <Setter Property="FontWeight" Value="Bold"/>
+                            <Setter Property="BorderThickness" Value="0,0,0,0"/>
+                            <Setter Property="Foreground" Value="White"/>
+                            <Setter Property="BorderBrush" Value="Transparent"/>
+                            <Setter Property="Height" Value="35"/>
+                            <Setter Property="FontSize" Value="16"/>
+                        </Style>
+                    </ListView.Resources>
+                    <ListView.ItemTemplate>
+                        <DataTemplate/>
+                    </ListView.ItemTemplate>
+                    <ListView.OpacityMask>
+                        <VisualBrush Visual="{Binding ElementName=BDRounded}"/>
+                    </ListView.OpacityMask>
+                    <ListView.View >
+                        <GridView>
+                            <GridViewColumn Header="Mã nhà vẫn chuyển" Width="160">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding MaNVC}" Foreground="White"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                            <GridViewColumn Header="Tên nhà vận chuyển" Width="180">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding TenNVC}" Foreground="White"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                            <GridViewColumn Header="COD" Width="150">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding COD}" Foreground="White"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                            <GridViewColumn Header="Phí vận chuyển tối thiểu" Width="220">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding PhiShipToiThieu}" Foreground="White"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                            <GridViewColumn Header="Công nợ phải thu" Width="160">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding CongNoPhaiThu}" Foreground="White"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                            <GridViewColumn Header="Công nợ phải trả" Width="150">
+                                <GridViewColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding CongNoPhaiTra}" Foreground="White"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </Grid>
+        </Border>
+        <Border Grid.Row="2"
+                Background="#FF453A7B"
+                Margin="15,15,15,15"
+                CornerRadius="10"/>
+        <TextBlock Text="Thời gian kết thúc:"
+            FontSize="20"
+            FontWeight="Bold"
+            Foreground="{StaticResource titlleColor1}"
+            Margin="487,37,386,27"/>
+        <DatePicker x:Name="DatePicker2"
+            materialDesign:HintAssist.Hint="Pick Date"
+            materialDesign:TextFieldAssist.HasClearButton="True"
+            BorderBrush="{StaticResource titlleColor1}"
+            Foreground="#9E9E9E"
+            Style="{StaticResource MaterialDesignFloatingHintDatePicker}" 
+            Margin="673,24,154,0" Height="38" VerticalAlignment="Top"/>
+        <StackPanel Grid.Row="2" Margin="15,15,15,15">
+            <lvc:CartesianChart x:Name="BarChart1" Series="{Binding SeriesCollection}" LegendLocation="Left" Height="275" Margin="15,40,15,0">
+                <lvc:CartesianChart.AxisX>
+                    <lvc:Axis Labels="{Binding Labels}"></lvc:Axis>
+                </lvc:CartesianChart.AxisX>
+                <lvc:CartesianChart.AxisY>
+                    <lvc:Axis LabelFormatter="{Binding Formatter}"></lvc:Axis>
+                </lvc:CartesianChart.AxisY>
+            </lvc:CartesianChart>
+        </StackPanel>
+    </Grid>
+</UserControl>

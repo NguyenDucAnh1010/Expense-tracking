@@ -1,0 +1,31 @@
+﻿<Window x:Class="Nghien_cuu_ung_dung.MessageBox.SignUp_Succesful"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nghien_cuu_ung_dung.MessageBox"
+        mc:Ignorable="d"
+        Title="SignUp_Succesful" 
+        Height="200" Width="400"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Background="Transparent"
+        AllowsTransparency="True"
+        ResizeMode="NoResize">
+    <Grid>
+        <Border Background="White"/>
+        <Button x:Name="Button1"
+                Margin="68,147,217,21"
+                Content="Đăng nhập" 
+                Click="Button_Click" IsDefault="True"/>
+        <Button x:Name="Button2"
+                Margin="217,147,68,21"
+                Content="Đóng" Click="Button_Click_1" IsCancel="True"/>
+        <Label Content="Đăng ký thành công" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Top"
+            Height="26" 
+            Width="120" Margin="0,78,0,0"/>
+
+    </Grid>
+</Window>

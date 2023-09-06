@@ -1,0 +1,125 @@
+﻿<UserControl x:Class="Nghien_cuu_ung_dung.View.Bao_cao_tai_chinh"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Nghien_cuu_ung_dung.View"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+             mc:Ignorable="d" 
+             d:DesignHeight="690" d:DesignWidth="1050">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="120*"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0"
+                Background="#FF453A7B"
+                Margin="15,15,15,15"
+                CornerRadius="10"/>
+        <TextBlock Text="Thời gian bắt đầu:"
+                FontSize="20"
+                FontWeight="Bold"
+                Foreground="{StaticResource titlleColor1}"
+                Margin="50,37,823,27"/>
+        <DatePicker x:Name="Timepicker1"
+                    materialDesign:HintAssist.Hint="Pick Date"
+                    materialDesign:TextFieldAssist.HasClearButton="True"
+                    BorderBrush="{StaticResource titlleColor1}"
+                    Foreground="#9E9E9E"
+                    Style="{StaticResource MaterialDesignFloatingHintDatePicker}" 
+                    Margin="236,24,591,0" Height="38" VerticalAlignment="Top"/>
+        <Border
+                Background="#FF453A7B"
+                Margin="15,0,15,15"
+                CornerRadius="10" Grid.Row="2">
+            <lvc:CartesianChart x:Name="chart1_Copy" Series="{Binding SeriesCollection2}" LegendLocation="Left" Margin="15,50,15,29">
+                <lvc:CartesianChart.AxisY>
+                    <lvc:Axis Title="Sô tiền" LabelFormatter="{Binding Formatter}"/>
+                </lvc:CartesianChart.AxisY>
+                <lvc:CartesianChart.AxisX>
+                    <lvc:Axis Title="Thời gian" Labels="{Binding Labels2}"/>
+                </lvc:CartesianChart.AxisX>
+            </lvc:CartesianChart>
+        </Border>
+        <Button x:Name="Button"
+            Height="25"
+                    FontSize="12"
+                    Content="Cập nhật"
+                    FontWeight="Bold"
+                    FontFamily="Arial"
+                    Background="Transparent"
+                    BorderBrush="Transparent"
+                    Tag="{StaticResource Color1}"
+                    VerticalContentAlignment="Center"
+                    Style="{StaticResource UserControlButton}" 
+                    Margin="934,32,24,36" Click="Button_Click" IsDefault="True"/>
+        <TextBlock Text="Thời gian kết thúc:"
+            FontSize="20"
+            FontWeight="Bold"
+            Foreground="{StaticResource titlleColor1}"
+            Margin="487,36,386,28"/>
+        <DatePicker x:Name="Timepicker2"
+            materialDesign:HintAssist.Hint="Pick Date"
+            materialDesign:TextFieldAssist.HasClearButton="True"
+            BorderBrush="{StaticResource titlleColor1}"
+            Foreground="#9E9E9E"
+            Style="{StaticResource MaterialDesignFloatingHintDatePicker}" 
+            Margin="673,22,154,0" Height="38" VerticalAlignment="Top"/>
+        <StackPanel Grid.Row="2" Margin="15,0,15,25">
+            <lvc:CartesianChart x:Name="chart1" Series="{Binding SeriesCollection}" LegendLocation="Left" Height="354" Margin="15,50,15,0">
+                <lvc:CartesianChart.AxisY>
+                    <lvc:Axis Title="Sô tiền" LabelFormatter="{Binding YFormatter}"></lvc:Axis>
+                </lvc:CartesianChart.AxisY>
+                <lvc:CartesianChart.AxisX>
+                    <lvc:Axis Title="Thời gian" Labels="{Binding Labels}"></lvc:Axis>
+                </lvc:CartesianChart.AxisX>
+            </lvc:CartesianChart>
+        </StackPanel>
+        <Border Grid.Row="1"
+            Background="#FF453A7B"
+            Margin="15,0,15,15"
+            CornerRadius="10" Loaded="Border_Loaded"/>
+        <TextBlock Text="Công nợ:"
+            FontSize="20"
+            FontWeight="Bold"
+            Foreground="{StaticResource titlleColor1}"
+            Margin="48,82,825,38" Grid.Row="1"/>
+        <TextBlock Text="Thu nhập:"
+            FontSize="20"
+            FontWeight="Bold"
+            Foreground="{StaticResource titlleColor1}"
+            Margin="48,20,825,100" Grid.Row="1"/>
+        <TextBlock Text="Doanh thu:"
+            FontSize="20"
+            FontWeight="Bold"
+            Foreground="{StaticResource titlleColor1}"
+            Margin="612,20,261,100" Grid.Row="1"/>
+        <TextBlock Text="Chi phí:"
+            FontSize="20"
+            FontWeight="Bold"
+            Foreground="{StaticResource titlleColor1}"
+            Margin="612,82,261,38" Grid.Row="1"/>
+        <TextBlock x:Name="textblock1" Text="$$$$$$$$$$$$$$$$$$$$$$"
+            FontSize="20"
+            FontWeight="Bold"
+            Foreground="{StaticResource Color1}"
+            Margin="164,82,587,38" Grid.Row="1"/>
+        <TextBlock x:Name="textblock3" Text="$$$$$$$$$$$$$$$$$$$$$$"
+            FontSize="20"
+            FontWeight="Bold"
+            Foreground="{StaticResource Color3}"
+            Margin="164,20,587,100" Grid.Row="1"/>
+        <TextBlock x:Name="textblock2" Text="$$$$$$$$$$$$$$$$$$$$$$"
+            FontSize="20"
+            FontWeight="Bold"
+            Foreground="{StaticResource Color4}"
+            Margin="734,20,24,100" Grid.Row="1"/>
+        <TextBlock x:Name="textblock4" Text="$$$$$$$$$$$$$$$$$$$$$$"
+            FontSize="20"
+            FontWeight="Bold"
+            Foreground="{StaticResource Color5}"
+            Margin="736,80,22,40" Grid.Row="1"/>
+    </Grid>
+</UserControl>

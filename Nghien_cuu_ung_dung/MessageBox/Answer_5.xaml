@@ -1,0 +1,30 @@
+﻿<Window x:Class="Nghien_cuu_ung_dung.MessageBox.Answer_5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nghien_cuu_ung_dung.MessageBox"
+        mc:Ignorable="d"
+        Title="Answer_5" Height="299" Width="600"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Background="Transparent"
+        AllowsTransparency="True"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="348*"/>
+            <ColumnDefinition Width="15*"/>
+            <ColumnDefinition Width="337*"/>
+        </Grid.ColumnDefinitions>
+        <Border Background="#FF443C67" Height="231" Width="NaN" Grid.ColumnSpan="3" Margin="-6,-24,0,0" VerticalAlignment="Top"/>
+        <Label Content="  Chia ra làm nhiều loại hóa đơn trong ứng dụng quản lí thu chi có thể giúp cho việc quản lí hóa đơn và các &#xD;&#xA;  giao dịch được dễ dàng hơn. Ví dụ, nếu bạn chia hóa đơn thành các loại như hóa đơn điện, hóa đơn nước, &#xD;&#xA;  hóa đơn internet,... thì khi quản lí, bạn có thể tìm kiếm và xem thông tin về các loại hóa đơn một cách nhanh&#xD;&#xA;  chóng và hiệu quả hơn. Bên cạnh đó, khi tạo hóa đơn, việc chọn ra loại hóa đơn cụ thể còn giúp cho người&#xD;&#xA;  sử dụng ứng dụng có thể biết được mục đích và nội dung của hóa đơn đó, từ đó tối ưu hóa việc quản lí tài&#xD;&#xA;  chính của mình." 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top"
+               Foreground="{StaticResource titlleColor1}"
+                 Margin="0,19,0,0" Height="188" Grid.ColumnSpan="3" Width="590"/>
+        <Button x:Name="Button1"
+                Margin="241,150,231,118"
+                Content="Xác nhận" Click="Button_Click" Width="NaN" Grid.ColumnSpan="3" IsDefault="True"/>
+    </Grid>
+</Window>

@@ -1,0 +1,25 @@
+﻿<Application x:Class="Nghien_cuu_ung_dung.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Nghien_cuu_ung_dung"
+             Startup="ApplicationStart">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Style/Color.xaml"/>
+                <ResourceDictionary Source="/Style/MainMenu_Button.xaml"/>
+                <ResourceDictionary Source="/Style/UserControl_Button.xaml"/>
+                <ResourceDictionary Source="/Style/Basic_Button.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+                <ResourceDictionary Source="/Style/TextBox_Test.xaml"/>
+                <ResourceDictionary Source="/Style/Menu_Logout.xaml"/>
+                <ResourceDictionary Source="/Style/GridView_Header.xaml"/>
+                <ResourceDictionary Source="/Style/Update_Button.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+    
+</Application>

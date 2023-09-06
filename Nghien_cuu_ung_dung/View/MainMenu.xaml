@@ -1,0 +1,312 @@
+﻿<Window x:Class="Nghien_cuu_ung_dung.View.MainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nghien_cuu_ung_dung.View"
+        xmlns:viewModel="clr-namespace:Nghien_cuu_ung_dung.ViewModels"
+        xmlns:fa="http://schemas.awesome.incremented/wpf/xaml/fontawesome.sharp"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="Window1" 
+        Height="750" Width="1300"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        ResizeMode="NoResize">
+    <Window.DataContext>
+        <viewModel:MainMenuViewModel/>
+    </Window.DataContext>
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type viewModel:Information_AccountViewModel}">
+            <local:Information_Account/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:Xem_giao_dichViewModel}">
+            <local:Kiem_Tra_Giao_Dich/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:So_quyViewModel}">
+            <local:So_quy/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:Cong_No_Nha_Van_ChuyenViewModel}">
+            <local:Cong_No_Nha_Van_Chuyen/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:Cong_No_Nha_Cung_CapViewModel}">
+            <local:Cong_no_nha_cung_cap/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:Cong_no_thuong_mai_dien_tuViewModel}">
+            <local:Cong_no_san_thuong_mai_dien_tu/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:Bao_cao_tai_chinhViewModel}">
+            <local:Bao_cao_tai_chinh/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:Du_bao_doanh_thuViewModel}">
+            <local:Du_bao_doanh_thu/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:Du_bao_san_phamViewModel}">
+            <local:Du_bao_san_pham/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModel:Ho_troViewModel}">
+            <local:Ho_tro/>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Border Opacity="1" 
+                RenderTransformOrigin="0.5,0.5" Margin="245,0,0,0" Grid.ColumnSpan="2">
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0,0" StartPoint="1,1">
+                    <GradientStop Color="#FF241B50" Offset="1.1"/>
+                    <GradientStop Color="#FF453A7B" Offset="0.0"/>
+                </LinearGradientBrush>
+            </Border.Background>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel x:Name="ControlBar"
+                        Grid.Row="0"
+                        Orientation="Horizontal"
+                        FlowDirection="RightToLeft"
+                        Background="Transparent"
+                        Margin="3,0,-1,0"
+                        MouseLeftButtonDown="ControlBar_MouseLeftButtonDown">
+                    <Button x:Name="btnClode"
+                            Content="X"
+                            Background="Transparent"
+                            Foreground="White"
+                            BorderBrush="Transparent"
+                            Style="{StaticResource Basic_Button}"
+                            Width="40" 
+                            Click="btnClode_Click">
+                    </Button>
+
+                    <Button x:Name="btnMiniimize"
+                            Style="{StaticResource Basic_Button}"
+                            Content="-"
+                            Background="Transparent"
+                            Foreground="White"
+                            BorderBrush="Transparent"
+                            Width="40" 
+                            Click="btnMiniimize_Click">
+                    </Button>
+                </StackPanel>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="235*"/>
+                        <ColumnDefinition Width="29*"/>
+                        <ColumnDefinition Width="79*"/>
+                        <ColumnDefinition Width="185*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel
+                                Orientation="Horizontal"
+                                VerticalAlignment="Center" Grid.ColumnSpan="3" Margin="5,0,55,0">
+                        <fa:IconImage Icon="{Binding Icon}"
+                                      Height="20"
+                                      Width="20"
+                                      IconFont="Solid"
+                                      Foreground="{StaticResource titlleColor2}"
+                                      Margin="35,0,10,0"/>
+                        <TextBlock Text="{Binding Caption}"
+                                   Foreground="{StaticResource titlleColor2}"
+                                   FontSize="16"
+                                   FontWeight="Medium"
+                                   VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Grid.Column="2"
+                                Orientation="Horizontal"
+                                FlowDirection="RightToLeft"
+                                VerticalAlignment="Center"
+                                Margin="0,0,10,0" Grid.ColumnSpan="2">
+                        <Menu Width="50">
+                            <MenuItem  Height="40" Tag="{StaticResource Color1}" Width="50">
+                                <MenuItem.Icon>
+                                    <fa:IconImage Icon="AngleDown" Style="{StaticResource TaskbarIcon}"    
+                                                  Foreground="{StaticResource Color2}"/>
+                                </MenuItem.Icon>
+                                <MenuItem Header="Logout" Foreground="#284387" BorderBrush="#464646" Click="Logout_Click"/>
+                            </MenuItem>
+
+                        </Menu>
+                        <TextBlock x:Name="Textblock1" Text="User not loggin"
+                                   Foreground="{StaticResource titlleColor3}"
+                                   VerticalAlignment="Center"/>
+                        <Ellipse Height="30"
+                                 Width="30"
+                                 Stroke="{StaticResource Color2}"
+                                 StrokeThickness="2"
+                                 Margin="10,0,0,0">
+                            <Ellipse.Fill>
+                                <ImageBrush ImageSource="/Picture/avatar-icon.png" ></ImageBrush>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </Border>
+        <Border Background="#382f66" Grid.Row="1" Width="255" Loaded="Border_Loaded">
+            <StackPanel Margin="0,0,5,0">
+                <StackPanel Orientation="Horizontal"
+                            FlowDirection="LeftToRight"
+                            Height="40"
+                            Margin="15,20,0,0">
+                    <Image Source="/Picture/Asset 1.png"
+                           Width="40">
+                    </Image>
+                    <TextBlock Text="Quản lý thu chi"
+                               Foreground= "{StaticResource titlleColor1}"
+                               FontSize="20" FontFamily="Segoe UI Bold"
+                               VerticalAlignment="Center"
+                               Margin="10,0,0,0"/>
+                </StackPanel>
+                <RadioButton x:Name="button1" Style="{StaticResource MenuButton}"
+                                    Tag="{StaticResource Color1}"
+                                    Margin="0,30,0,0" Width="249"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Right"
+                                    Command="{Binding Show_Information_AccountViewCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <fa:IconImage Icon="User" IconFont="Solid"
+                                              Style="{StaticResource MenuButtonIcon}"
+                                              Margin="20,0,0,0"/>
+                        <TextBlock Text="Thông tin tài khoản" Style="{StaticResource menuButtonText}"
+                                       Margin="20,0,0,0"/>
+                    </StackPanel>
+                </RadioButton>
+                <RadioButton Style="{StaticResource MenuButton}"
+                                     Tag="{StaticResource Color2}" Width="249"
+                             Command="{Binding Show_Xem_Giao_DichViewCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <fa:IconImage Icon="Trademark" 
+                                              Style="{StaticResource MenuButtonIcon}"
+                                              Margin="20,0,0,0"/>
+                        <TextBlock Text="Xem giao dịch" Style="{StaticResource menuButtonText}"
+                                       Margin="20,0,0,0"/>
+                    </StackPanel>
+                </RadioButton>
+                <RadioButton Style="{StaticResource MenuButton}"
+                             Tag="{StaticResource Color3}"
+                             Margin="0,0,0,0" Width="249"
+                             VerticalAlignment="Center"
+                             HorizontalAlignment="Right"
+                             Command="{Binding Show_So_QuyViewCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <fa:IconImage Icon="FileContract" 
+                                              Style="{StaticResource MenuButtonIcon}"
+                                              Margin="20,0,0,0"
+                                      Height="30"/>
+                        <TextBlock Text="Sổ quỹ" Style="{StaticResource menuButtonText}"
+                                       Margin="20,0,0,0"/>
+                    </StackPanel>
+                </RadioButton>
+                <RadioButton Style="{StaticResource MenuButton}"
+                                     Tag="{StaticResource Color4}"
+                                     Margin="0,0,0,0" Width="249"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Right"
+                             Command="{Binding Show_Cong_no_nha_van_chuyenViewCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <fa:IconImage Icon="TruckFast" IconFont="Solid"
+                                              Style="{StaticResource MenuButtonIcon}"
+                                              Margin="20,0,0,0"/>
+                        <TextBlock Text="Công nợ nhà vận chuyển" Style="{StaticResource menuButtonText}"
+                                       Margin="20,0,0,0"/>
+                    </StackPanel>
+                </RadioButton>
+                <RadioButton Style="{StaticResource MenuButton}"
+                                     Tag="{StaticResource Color5}"
+                                     Margin="0,0,0,0" Width="249"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Right"
+                             Command="{Binding Show_Cong_no_nha_cung_capViewCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <fa:IconImage Icon="Shop" IconFont="Solid"
+                                              Style="{StaticResource MenuButtonIcon}"
+                                              Margin="20,0,0,0"/>
+                        <TextBlock Text="Công nợ nhà cung cấp" Style="{StaticResource menuButtonText}"
+                                       Margin="20,0,0,0"/>
+                    </StackPanel>
+                </RadioButton>
+                <RadioButton Style="{StaticResource MenuButton}"
+                                     Tag="{StaticResource Color6}"
+                                     Margin="0,0,0,0" Width="249"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Right"
+                             Command="{Binding Show_Cong_no_san_thuong_mai_dien_tuViewCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <fa:IconImage Icon="DollarSign" IconFont="Solid"
+                                              Style="{StaticResource MenuButtonIcon}"
+                                              Margin="20,0,0,0"/>
+                        <TextBlock Text="Công nợ sàn TMĐT" Style="{StaticResource menuButtonText}"
+                                       Margin="20,0,0,0"/>
+                    </StackPanel>
+                </RadioButton>
+                <RadioButton Style="{StaticResource MenuButton}"
+                                     Tag="{StaticResource Color7}"
+                                     Margin="0,0,0,0" Width="249"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Right"
+                             Command="{Binding Show_Bao_cao_tai_chinhViewCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <fa:IconImage Icon="FileInvoice" IconFont="Solid"
+                                              Style="{StaticResource MenuButtonIcon}"
+                                              Margin="20,0,0,0"/>
+                        <TextBlock Text="Báo cáo tài chính" Style="{StaticResource menuButtonText}"
+                                       Margin="20,0,0,0"/>
+                    </StackPanel>
+                </RadioButton>
+                <RadioButton Style="{StaticResource MenuButton}"
+                                     Tag="{StaticResource Color8}"
+                                     Margin="0,0,0,0" Width="249"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Right"
+                             Command="{Binding Show_Du_bao_doanh_thuViewCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <fa:IconImage Icon="ChartLine" IconFont="Solid"
+                                              Style="{StaticResource MenuButtonIcon}"
+                                              Margin="20,0,0,0"/>
+                        <TextBlock Text="Dự báo thu nhập" Style="{StaticResource menuButtonText}"
+                                       Margin="20,0,0,0"/>
+                    </StackPanel>
+                </RadioButton>
+                <RadioButton Style="{StaticResource MenuButton}"
+                                     Tag="{StaticResource Color9}"
+                                     Margin="0,0,0,0" Width="249"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Right"
+                             Command="{Binding Show_Du_bao_san_phamViewCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <fa:IconImage Icon="Receipt" IconFont="Solid"
+                                              Style="{StaticResource MenuButtonIcon}"
+                                              Margin="20,0,0,0"/>
+                        <TextBlock Text="Dự báo sản phẩm" Style="{StaticResource menuButtonText}"
+                                       Margin="20,0,0,0"/>
+                    </StackPanel>
+                </RadioButton>
+                <RadioButton Style="{StaticResource MenuButton}"
+                                     Tag="{StaticResource Color10}"
+                                     Margin="0,0,0,0" Width="249"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Right"
+                             Command="{Binding Show_Ho_tro_ViewCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <fa:IconImage Icon="Message" IconFont="Solid"
+                                              Style="{StaticResource MenuButtonIcon}"
+                                              Margin="20,0,0,0"/>
+                        <TextBlock Text="Hỗ trợ" Style="{StaticResource menuButtonText}"
+                                       Margin="20,0,0,0"/>
+                    </StackPanel>
+                </RadioButton>
+            </StackPanel>
+        </Border>
+        <ContentControl Content="{Binding CurrentChildView}"
+                        Grid.Column="1" 
+                        Margin="0,80,0,0"/>
+    </Grid>
+</Window>

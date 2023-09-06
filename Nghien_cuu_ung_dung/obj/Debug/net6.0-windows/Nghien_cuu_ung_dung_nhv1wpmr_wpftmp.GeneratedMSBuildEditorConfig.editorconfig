@@ -1,0 +1,176 @@
+is_global = true
+build_property.XamlSourceGeneratorTracingFolder = 
+build_property.TargetFramework = net6.0-windows
+build_property.TargetFramework = net6.0-windows
+build_property.ProjectTypeGuidsProperty = 
+build_property.MSBuildProjectFullPath = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung_nhv1wpmr_wpftmp.csproj
+build_property.RootNamespace = Nghien_cuu_ung_dung_nhv1wpmr_wpftmp
+build_property.RootNamespace = Nghien_cuu_ung_dung_nhv1wpmr_wpftmp
+build_property.DefineConstantsProperty = TRACE,DEBUG,NET,NET6_0,NETCOREAPP,WINDOWS,WINDOWS7_0,NET5_0_OR_GREATER,NET6_0_OR_GREATER,NETCOREAPP3_0_OR_GREATER,NETCOREAPP3_1_OR_GREATER,WINDOWS7_0_OR_GREATER,HAS_UNO,UNO_HAS_FRAMEWORKELEMENT_MEASUREOVERRIDE,UNO_HAS_NO_IDEPENDENCYOBJECT,UNO_REFERENCE_API
+build_property.Configuration = Debug
+build_property.IntermediateOutputPath = obj\Debug\net6.0-windows\
+build_property.AndroidApplication = 
+build_property.OutputType = WinExe
+build_property.MSBuildProjectName = Nghien_cuu_ung_dung_nhv1wpmr_wpftmp
+build_property.BuildingProject = true
+build_property.DesignTimeBuild = 
+build_property.UnoUISourceGeneratorDebuggerBreak = 
+build_property.BuildingInsideVisualStudio = true
+build_property.IsHotReloadHost = 
+build_property.UnoUseXamlReaderHotReload = true
+build_property.IsUnoHead = 
+build_property.IsUnoHead = 
+build_property.UseWPF = true
+build_property.UnoRemoteControlPort = 
+build_property.UnoRemoteControlHost = 
+build_property.UnoRemoteControlProcessorsPath = 
+build_property.UnoSkipUserControlsInVisualTree = 
+build_property.ShouldWriteErrorOnInvalidXaml = 
+build_property.IsUiAutomationMappingEnabled = 
+build_property.ShouldAnnotateGeneratedXaml = 
+build_property.DefaultLanguage = en
+build_property.UnoPlatformTelemetryOptOut = 
+build_property.UnoPlatformDefaultSymbolsFontFamily = ms-appx:///Uno.Fonts.Fluent/Fonts/uno-fluentui-assets.ttf
+build_property.ExcludeXamlNamespacesProperty = win,not_mux
+build_property.IncludeXamlNamespacesProperty = xamarin,not_win,legacy
+build_property.XamlGeneratorAnalyzerSuppressionsProperty = nventive.Usage-NV0056,nventive.Usage-NV0058,nventive.Usage-NV1003,nventive.Usage-NV0085,nventive.Usage-NV2001,nventive.Usage-NV2003,nventive.Usage-NV2004,nventive.Usage-NV2005,csharp-618 // Ignore obsolete members warnings,csharp-105 // Ignore duplicate namespaces,csharp-1591 // Ignore missing XML comment warnings,csharp-CS8669 // Ignore annotation for nullable reference types,dotnet-CA1001
+build_property.UnoEnableXamlFuzzyMatching = 
+build_property.UnoXamlResourcesTrimming = 
+build_property.BaseIntermediateOutputPath = obj\
+build_property.AssemblyName = Nghien_cuu_ung_dung
+build_property.TargetPlatformMinVersion = 7.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.ProjectDir = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\
+
+[D:/công việc/C/Bài nguyên cứu/Nghien_cuu_ung_dung/Nghien_cuu_ung_dung/MessageBox/MessageBox_OPT.xaml]
+build_metadata.AdditionalFiles.SourceItemGroup = Page
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.FullPath = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\MessageBox\MessageBox_OPT.xaml
+build_metadata.AdditionalFiles.Identity = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\MessageBox\MessageBox_OPT.xaml
+build_metadata.AdditionalFiles.XamlRuntime = Wpf
+
+[D:/công việc/C/Bài nguyên cứu/Nghien_cuu_ung_dung/Nghien_cuu_ung_dung/MessageBox/SignUp_Succesful.xaml]
+build_metadata.AdditionalFiles.SourceItemGroup = Page
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.FullPath = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\MessageBox\SignUp_Succesful.xaml
+build_metadata.AdditionalFiles.Identity = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\MessageBox\SignUp_Succesful.xaml
+build_metadata.AdditionalFiles.XamlRuntime = Wpf
+
+[D:/công việc/C/Bài nguyên cứu/Nghien_cuu_ung_dung/Nghien_cuu_ung_dung/Style/Basic_Button.xaml]
+build_metadata.AdditionalFiles.SourceItemGroup = Page
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.FullPath = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\Style\Basic_Button.xaml
+build_metadata.AdditionalFiles.Identity = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\Style\Basic_Button.xaml
+build_metadata.AdditionalFiles.XamlRuntime = Wpf
+
+[D:/công việc/C/Bài nguyên cứu/Nghien_cuu_ung_dung/Nghien_cuu_ung_dung/Style/Color.xaml]
+build_metadata.AdditionalFiles.SourceItemGroup = Page
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.FullPath = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\Style\Color.xaml
+build_metadata.AdditionalFiles.Identity = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\Style\Color.xaml
+build_metadata.AdditionalFiles.XamlRuntime = Wpf
+
+[D:/công việc/C/Bài nguyên cứu/Nghien_cuu_ung_dung/Nghien_cuu_ung_dung/Style/MainMenu_Button.xaml]
+build_metadata.AdditionalFiles.SourceItemGroup = Page
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.FullPath = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\Style\MainMenu_Button.xaml
+build_metadata.AdditionalFiles.Identity = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\Style\MainMenu_Button.xaml
+build_metadata.AdditionalFiles.XamlRuntime = Wpf
+
+[D:/công việc/C/Bài nguyên cứu/Nghien_cuu_ung_dung/Nghien_cuu_ung_dung/Style/Menu_Logout.xaml]
+build_metadata.AdditionalFiles.SourceItemGroup = Page
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.FullPath = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\Style\Menu_Logout.xaml
+build_metadata.AdditionalFiles.Identity = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\Style\Menu_Logout.xaml
+build_metadata.AdditionalFiles.XamlRuntime = Wpf
+
+[D:/công việc/C/Bài nguyên cứu/Nghien_cuu_ung_dung/Nghien_cuu_ung_dung/Style/TextBox_Test.xaml]
+build_metadata.AdditionalFiles.SourceItemGroup = Page
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.FullPath = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\Style\TextBox_Test.xaml
+build_metadata.AdditionalFiles.Identity = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\Style\TextBox_Test.xaml
+build_metadata.AdditionalFiles.XamlRuntime = Wpf
+
+[D:/công việc/C/Bài nguyên cứu/Nghien_cuu_ung_dung/Nghien_cuu_ung_dung/Style/UserControl_Button.xaml]
+build_metadata.AdditionalFiles.SourceItemGroup = Page
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.FullPath = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\Style\UserControl_Button.xaml
+build_metadata.AdditionalFiles.Identity = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\Style\UserControl_Button.xaml
+build_metadata.AdditionalFiles.XamlRuntime = Wpf
+
+[D:/công việc/C/Bài nguyên cứu/Nghien_cuu_ung_dung/Nghien_cuu_ung_dung/View/Cong_no.xaml]
+build_metadata.AdditionalFiles.SourceItemGroup = Page
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.FullPath = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\View\Cong_no.xaml
+build_metadata.AdditionalFiles.Identity = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\View\Cong_no.xaml
+build_metadata.AdditionalFiles.XamlRuntime = Wpf
+
+[D:/công việc/C/Bài nguyên cứu/Nghien_cuu_ung_dung/Nghien_cuu_ung_dung/View/Information_Account.xaml]
+build_metadata.AdditionalFiles.SourceItemGroup = Page
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.FullPath = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\View\Information_Account.xaml
+build_metadata.AdditionalFiles.Identity = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\View\Information_Account.xaml
+build_metadata.AdditionalFiles.XamlRuntime = Wpf
+
+[D:/công việc/C/Bài nguyên cứu/Nghien_cuu_ung_dung/Nghien_cuu_ung_dung/View/Kiem_Tra_Giao_Dich.xaml]
+build_metadata.AdditionalFiles.SourceItemGroup = Page
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.FullPath = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\View\Kiem_Tra_Giao_Dich.xaml
+build_metadata.AdditionalFiles.Identity = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\View\Kiem_Tra_Giao_Dich.xaml
+build_metadata.AdditionalFiles.XamlRuntime = Wpf
+
+[D:/công việc/C/Bài nguyên cứu/Nghien_cuu_ung_dung/Nghien_cuu_ung_dung/View/Login.xaml]
+build_metadata.AdditionalFiles.SourceItemGroup = Page
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.FullPath = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\View\Login.xaml
+build_metadata.AdditionalFiles.Identity = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\View\Login.xaml
+build_metadata.AdditionalFiles.XamlRuntime = Wpf
+
+[D:/công việc/C/Bài nguyên cứu/Nghien_cuu_ung_dung/Nghien_cuu_ung_dung/View/MainMenu.xaml]
+build_metadata.AdditionalFiles.SourceItemGroup = Page
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.FullPath = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\View\MainMenu.xaml
+build_metadata.AdditionalFiles.Identity = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\View\MainMenu.xaml
+build_metadata.AdditionalFiles.XamlRuntime = Wpf
+
+[D:/công việc/C/Bài nguyên cứu/Nghien_cuu_ung_dung/Nghien_cuu_ung_dung/View/Sign_up.xaml]
+build_metadata.AdditionalFiles.SourceItemGroup = Page
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.FullPath = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\View\Sign_up.xaml
+build_metadata.AdditionalFiles.Identity = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\View\Sign_up.xaml
+build_metadata.AdditionalFiles.XamlRuntime = Wpf
+
+[D:/công việc/C/Bài nguyên cứu/Nghien_cuu_ung_dung/Nghien_cuu_ung_dung/View/So_quy.xaml]
+build_metadata.AdditionalFiles.SourceItemGroup = Page
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.FullPath = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\View\So_quy.xaml
+build_metadata.AdditionalFiles.Identity = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\View\So_quy.xaml
+build_metadata.AdditionalFiles.XamlRuntime = Wpf
+
+[D:/công việc/C/Bài nguyên cứu/Nghien_cuu_ung_dung/Nghien_cuu_ung_dung/App.xaml]
+build_metadata.AdditionalFiles.SourceItemGroup = ApplicationDefinition
+build_metadata.AdditionalFiles.Link = 
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.FullPath = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\App.xaml
+build_metadata.AdditionalFiles.Identity = D:\công việc\C\Bài nguyên cứu\Nghien_cuu_ung_dung\Nghien_cuu_ung_dung\App.xaml
+build_metadata.AdditionalFiles.XamlRuntime = Wpf

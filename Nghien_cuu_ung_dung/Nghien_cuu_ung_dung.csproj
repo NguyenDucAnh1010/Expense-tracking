@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="View\Artboard 1.png" />
+    <None Remove="View\Artboard 2.png" />
+    <None Remove="View\Artboard 3.png" />
+    <None Remove="View\Asset 1.png" />
+    <None Remove="View\avatar-icon.png" />
+    <None Remove="View\user-avatar.png" />
+    <None Remove="View\—Pngtree—financial management mobile banking revenue_5780265.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FontAwesome.Sharp" Version="6.3.0" />
+    <PackageReference Include="IronPython" Version="3.4.0" />
+    <PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.8.0" />
+    <PackageReference Include="Microsoft.ML" Version="2.0.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.5" />
+    <PackageReference Include="System.IO.Ports" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Picture\Artboard 1.png" />
+    <Resource Include="Picture\Artboard 2.png" />
+    <Resource Include="Picture\Artboard 3.png" />
+    <Resource Include="Picture\—Pngtree—financial management mobile banking revenue_5780265.png" />
+    <Resource Include="Picture\Asset 1.png" />
+    <Resource Include="Picture\avatar-icon.png" />
+    <Resource Include="Picture\user-avatar.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Elements\" />
+  </ItemGroup>
+
+</Project>

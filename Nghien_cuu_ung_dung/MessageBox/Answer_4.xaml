@@ -1,0 +1,30 @@
+﻿<Window x:Class="Nghien_cuu_ung_dung.MessageBox.Answer_4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nghien_cuu_ung_dung.MessageBox"
+        mc:Ignorable="d"
+        Title="Answer_4" Height="303" Width="600"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Background="Transparent"
+        AllowsTransparency="True"
+        ResizeMode="NoResize">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="348*"/>
+            <ColumnDefinition Width="15*"/>
+            <ColumnDefinition Width="337*"/>
+        </Grid.ColumnDefinitions>
+        <Border Background="#FF443C67" Height="NaN" Width="NaN" Grid.ColumnSpan="3" Margin="86,-9,101,68"/>
+        <Label Content="Quản lí thu chi cho cửa hàng là ứng dụng giúp người dùng có thể:&#xD;&#xA;+ Quản lý thu chi chi tiết, chính xác&#xD;&#xA;+ Quản lý sổ quỹ theo từng chi nhánh bán hàng&#xD;&#xA;+ Thống kê biến động số dư theo thời gian&#xD;&#xA;+ Theo dõi công nợ nhà cung cấp&#xD;&#xA;+ Đối soát công nợ nhà vận chuyển&#xD;&#xA;+ Biểu đồ báo cáo trực quan&#xD;&#xA;+ Nắm bắt mọi số liệu kinh doanh&#xD;&#xA;" 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top"
+               Foreground="{StaticResource titlleColor1}"
+                 Margin="121,19,0,0" Height="237" Grid.ColumnSpan="3"/>
+        <Button x:Name="Button1"
+                Margin="241,179,231,89"
+                Content="Xác nhận" Click="Button_Click" Width="NaN" Grid.ColumnSpan="3" IsDefault="True"/>
+    </Grid>
+</Window>

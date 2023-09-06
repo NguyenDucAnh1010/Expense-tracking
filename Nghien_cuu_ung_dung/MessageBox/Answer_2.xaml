@@ -1,0 +1,40 @@
+﻿<Window x:Class="Nghien_cuu_ung_dung.MessageBox.Answer_2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nghien_cuu_ung_dung.MessageBox"
+        mc:Ignorable="d"
+        Title="Answer_2" Height="480" Width="600"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Background="Transparent"
+        AllowsTransparency="True"
+        ResizeMode="NoResize">
+    <Grid Margin="0,0,-24,0" Width="NaN">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="265*"/>
+            <ColumnDefinition Width="22*"/>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="69*"/>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition Width="197*"/>
+        </Grid.ColumnDefinitions>
+        <Border Background="#FF443C67" Height="NaN" Width="NaN" Grid.ColumnSpan="6" Margin="-58,-82,-55,-36" RenderTransformOrigin="0.5,0.5">
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.396"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-1.257"/>
+                </TransformGroup>
+            </Border.RenderTransform>
+        </Border>
+        <Label Content="Nếu bạn không nhận được Mã xác thực OTP khi đăng nhập hoặc thay đổi mật khẩu tài khoản/mã PIN của &#xD;&#xA;tin nhắn SMS:&#xD;&#xA;1. Lỗi kết nối hoặc lỗi đường truyền&#xD;&#xA;Trong trường hợp này, bạn có thể thử những hướng giải quyết sau:&#xD;&#xA;- Kiểm tra lại kết nối sóng dịch vụ viễn thông (đối với tin nhắn SMS) trên điện thoại của bạn đảm bảo đủ &#xD;&#xA;mạnh.&#xD;&#xA;- Yêu cầu gửi lại Mã xác thực OTP (cho phép tối đa 01 lần)&#xD;&#xA;2. Số điện thoại liên kết tài khoản không chính xác&#xD;&#xA;Số điện thoại đúng để nhận được mã xác thực phải là số điện thoại bạn đã dùng để đăng ký tài khoản. Bạn &#xD;&#xA;vui lòng kiểm tra lại thông tin này trong mục Tài khoản của tôi nhằm đảm bảo tài khoản và số điện thoại &#xD;&#xA;liên kết với tài khoản là chính xác Đối với trường hợp số điện thoại liên kết với tài khoản Shopee trước đó &#xD;&#xA;bạn sử dụng bị thay đổi đầu số theo quy định nhà mạng, bạn vui lòng cập nhật lại đầu số đúng để có thể &#xD;&#xA;nhận Mã xác thực OTP&#xD;&#xA;3. Vượt quá giới hạn số lượt yêu cầu gửi Mã OTP&#xD;&#xA;Thông báo Yêu cầu OTP không thành công (D06) sẽ được hiển thị khi bạn đã vượt quá số lượt yêu cầu gửi&#xD;&#xA;Mã xác thực OTP cho phép (tối đa 01 lần). Giới hạn này được đưa ra nhằm mục đích hạn chế rủi ro tài&#xD;&#xA;khoản bị đánh cắp thông tin&#xD;&#xA;Trong trường hợp này, vui lòng đợi 30 phút và thử yêu cầu gửi lại Mã xác thực OTP&#xD;&#xA;4. Các nguyên nhân khác&#xD;&#xA;Tài khoản của bạn không được đăng nhập quá 180 ngày&#xD;&#xA;⚠️ Lưu ý:&#xD;&#xA;Nếu gặp vấn đề liên quan đến Mã xác thực OTP khi đăng nhập tài khoản bằng tin nhắn SMS, bạn có thể&#xD;&#xA;thử sử dụng những phương pháp đăng nhập khác&#xD;&#xA;"
+                Foreground="{StaticResource titlleColor1}"
+                 Margin="19,22,0,65" Grid.ColumnSpan="6" Height="NaN" HorizontalAlignment="Left"/>
+        <Button x:Name="Button1"
+                Margin="232,420,14,30"
+                Content="Xác nhận" Click="Button_Click" Width="128" Grid.ColumnSpan="4" RenderTransformOrigin="0.517,-0.591" Height="32" IsDefault="True"/>
+    </Grid>
+</Window>
